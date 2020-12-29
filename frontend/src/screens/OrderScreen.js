@@ -96,7 +96,7 @@ const OrderScreen = ({ match, history }) => {
         <Col md={8}>
           <ListGroup variant='flush'>
             <ListGroup.Item>
-              <h2>Shipping</h2>
+              <h2>Customer Info</h2>
               <p>
                 <strong>Name: </strong> {order.user.name}
               </p>
@@ -104,18 +104,18 @@ const OrderScreen = ({ match, history }) => {
                 <strong>Email: </strong>{' '}
                 <a href={`mailto:${order.user.email}`}>{order.user.email}</a>
               </p>
-              <p>
+              {/* <p>
                 <strong>Address:</strong>
                 {order.shippingAddress.address}, {order.shippingAddress.city}{' '}
                 {order.shippingAddress.postalCode},{' '}
                 {order.shippingAddress.country}
-              </p>
+              </p> */}
               {order.isDelivered ? (
                 <Message variant='success'>
                   Delivered on {order.deliveredAt}
                 </Message>
               ) : (
-                <Message variant='danger'>Not Delivered</Message>
+                <Message variant='danger'>Not Booked</Message>
               )}
             </ListGroup.Item>
 
@@ -133,7 +133,7 @@ const OrderScreen = ({ match, history }) => {
             </ListGroup.Item>
 
             <ListGroup.Item>
-              <h2>Order Items</h2>
+              <h2>MOVIE SHOW</h2>
               {order.orderItems.length === 0 ? (
                 <Message>Order is empty</Message>
               ) : (

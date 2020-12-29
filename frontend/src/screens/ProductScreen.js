@@ -105,7 +105,7 @@ const ProductScreen = ({ history, match }) => {
                     <Row>
                       <Col>Price:</Col>
                       <Col>
-                        <strong>${product.price}</strong>
+                        <strong>{product.price}$</strong>
                       </Col>
                     </Row>
                   </ListGroup.Item>
@@ -114,7 +114,9 @@ const ProductScreen = ({ history, match }) => {
                     <Row>
                       <Col>Status:</Col>
                       <Col>
-                        {product.countInStock > 0 ? 'In Stock' : 'Out Of Stock'}
+                        {product.countInStock > 0
+                          ? 'Available'
+                          : 'Not Available'}
                       </Col>
                     </Row>
                   </ListGroup.Item>
@@ -149,7 +151,7 @@ const ProductScreen = ({ history, match }) => {
                       type='button'
                       disabled={product.countInStock === 0}
                     >
-                      Add To Cart
+                      BOOK NOW
                     </Button>
                   </ListGroup.Item>
                 </ListGroup>

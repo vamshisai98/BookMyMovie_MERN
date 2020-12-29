@@ -32,7 +32,7 @@ const Header = () => {
             <Nav className='ml-auto'>
               <LinkContainer to='/cart'>
                 <Nav.Link>
-                  <i className='fas fa-ticket-alt'></i> Cart
+                  <i className='fas fa-ticket-alt'></i> Bookings
                 </Nav.Link>
               </LinkContainer>
               {userInfo ? (
@@ -57,10 +57,10 @@ const Header = () => {
                     <NavDropdown.Item>Users</NavDropdown.Item>
                   </LinkContainer>
                   <LinkContainer to='/admin/productlist'>
-                    <NavDropdown.Item>Products</NavDropdown.Item>
+                    <NavDropdown.Item>Theaters</NavDropdown.Item>
                   </LinkContainer>
                   <LinkContainer to='/admin/orderlist'>
-                    <NavDropdown.Item>Orders</NavDropdown.Item>
+                    <NavDropdown.Item>Bookings</NavDropdown.Item>
                   </LinkContainer>
                 </NavDropdown>
               )}

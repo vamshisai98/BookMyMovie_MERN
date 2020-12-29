@@ -25,7 +25,7 @@ const CartScreen = ({ match, location, history }) => {
   const { cartItems } = cart;
 
   const checkoutHandler = () => {
-    history.push('/login?redirect=shipping');
+    history.push('/login?redirect=payment');
   };
 
   useEffect(() => {

@@ -144,7 +144,7 @@ const ProductEditScreen = ({ match, history }) => {
             </Form.Group>
 
             <Form.Group controlId='brand'>
-              <Form.Label>Brand</Form.Label>
+              <Form.Label>Theater</Form.Label>
               <Form.Control
                 type='text'
                 placeholder='Enter brand'
@@ -164,7 +164,7 @@ const ProductEditScreen = ({ match, history }) => {
             </Form.Group>
 
             <Form.Group controlId='category'>
-              <Form.Label>Category</Form.Label>
+              <Form.Label>Genre</Form.Label>
               <Form.Control
                 type='text'
                 placeholder='Enter category'
