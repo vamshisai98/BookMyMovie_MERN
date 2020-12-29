@@ -9,7 +9,7 @@ const Header = () => {
         <Container>
           <LinkContainer to='/'>
             <Navbar.Brand>
-              Book Your Movie <i class='fas fa-film'></i>
+              Book Your Movie <i className='fas fa-film'></i>
             </Navbar.Brand>
           </LinkContainer>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
@@ -17,12 +17,12 @@ const Header = () => {
             <Nav className='ml-auto'>
               <LinkContainer to='/cart'>
                 <Nav.Link>
-                  <i class='fas fa-ticket-alt'></i>Cart
+                  <i className='fas fa-ticket-alt'></i>Cart
                 </Nav.Link>
               </LinkContainer>
               <LinkContainer to='/login'>
                 <Nav.Link>
-                  <i class='fas fa-sign-in-alt'></i>Sign In
+                  <i className='fas fa-sign-in-alt'></i>Sign In
                 </Nav.Link>
               </LinkContainer>
             </Nav>
